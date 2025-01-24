@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissor Game</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="background">
+        <div class="btnc">
+            <button class="btn" onclick="computer()">
+                Player <span>VS</span> Computer
+            </button>
+            <button class="btn" onclick="enter_name()">
+                Player 1 <span>VS</span> Player 2
+            </button>
+        </div>
+
+        <div class="comp" style="display: none">
+            <h1>Select Your Option</h1>
+            <div class="options">
+                <button onclick="rock()">Rock</button>
+                <button onclick="paper()">Paper</button>
+                <button onclick="sci()">Scissor</button>
+            </div>
+        </div>
+        <div class="result1">
+            <h1 class="result"></h1>
+            <h2 class="resultp1"></h2>
+            <h2 class="resultp2"></h2>
+        </div>
+
+        <div class="nam" style="display: none">
+            <div class="flex">
+                <h1>Type names (Optional) :-</h1>
+                <h2>Player 1 :-</h2>
+                <br>
+                <input type="text" id="name1" name="fname" placeholder="Player 1 Name" />
+                <h2>Player 2 :-</h2>
+                <br>
+                <input type="text" id="name2" name="lname" placeholder="player 2 Name" />
+                <br>
+                <button onclick="submit()">Next</button>
+            </div>
+        </div>
+
+        <div class="fri" style="display: none">
+            <div>
+                <h1>Player 1 Turn :-</h1>
+                <h2>Hide screen from player 2</h2>
+                <h1 class="heading1"></h1>
+            </div>
+
+            <div class="options">
+                <button onclick="rock1()">Rock</button>
+                <button onclick="paper1()">Paper</button>
+                <button onclick="sci1()">Scissor</button>
+            </div>
+        </div>
+        <div class="fri1" style="display: none">
+            <div>
+                <h1>Player 2 Turn :-</h1>
+                <h2>Hide screen from player 1</h2>
+                <h1 class="heading2"></h1>
+            </div>
+
+            <div class="options">
+                <button onclick="rock2()">Rock</button>
+                <button onclick="paper2()">Paper</button>
+                <button onclick="sci2()">Scissor</button>
+            </div>
+        </div>
+
+        <div class="last" style="display: none">
+            <button class="btn" onclick="computer(),retry()">Retry</button>
+            <button class="btn" onclick="home()">Home</button>
+        </div>
+        <div class="last2" style="display: none">
+            <button class="btn" onclick="friend(),retry2()">Retry</button>
+            <button class="btn" onclick="home()">Home</button>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
