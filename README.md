@@ -1,1 +1,1 @@
-# Rock-paper-scissor-game
+I redesigend and improved this game # Rock-paper-scissor-game
